@@ -5,7 +5,7 @@ in:
     type: csv
     charset: UTF-8
     newline: LF
-    delimiter: ','
+    delimiter: ","
     quote: '"'
     escape: '"'
     trim_if_not_quoted: false
@@ -13,9 +13,10 @@ in:
     allow_extra_columns: false
     allow_optional_columns: false
     columns:
-    - {name: c0, type: long}
+      - { name: c0, type: long }
 out:
   type: file
   path_prefix: ./dist/out_
   file_ext: csv
-  formatter: {type: csv}
+  formatter: { type: csv }
+exec: { max_threads: 4, min_output_tasks: 2 }
