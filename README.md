@@ -21,3 +21,5 @@ Additionally, because the results may vary depending on the number of CPU cores 
 ```shell
 embulk -J-Xms1024m -J-Xmx1024m run config.yml
 ```
+
+<img width="1474" alt="スクリーンショット 2023-11-22 12 09 00" src="https://github.com/gtnao0219/embulk-memory-leak-debug/assets/25474324/2bd4432c-e0e6-4760-b485-14d0a5eeb86a">
