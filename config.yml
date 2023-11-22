@@ -1,0 +1,21 @@
+in:
+  type: file
+  path_prefix: ./data/
+  parser:
+    type: csv
+    charset: UTF-8
+    newline: LF
+    delimiter: ','
+    quote: '"'
+    escape: '"'
+    trim_if_not_quoted: false
+    skip_header_lines: 0
+    allow_extra_columns: false
+    allow_optional_columns: false
+    columns:
+    - {name: c0, type: long}
+out:
+  type: file
+  path_prefix: ./dist/out_
+  file_ext: csv
+  formatter: {type: csv}
